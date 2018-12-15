@@ -1,10 +1,625 @@
-<!DOCTYPE html>
-<html>
+<!Doctype html><html>
+
 <head>
-	<title>my site</title>
+  
+  <title>MY WEBSITE</title>
+  <link rel = "stylesheet" type = "text/css" href = "7.css"/>       
+
 </head>
 
-<body>
-<h1>Welcome to my site. </h1>
-</body>
-</html>
+<body onLoad = "alert('your wbesite has loaded');">
+
+  <center>
+
+    <button type = "button" id = "time" onclick = "showtime()">TODAY'S TIME</button>
+
+    <script type="text/javascript">
+     function showtime() {
+      var now = new Date
+      var Hours = now.getHours();
+      var Minutes = now.getMinutes();
+      var Seconds = now.getSeconds();
+      document.write("<h2>Please reload this website to continue and to know current time click <span class = 'asdf'> (TODAY'S TIME) </span> again.<br/>")
+      document.write(Hours + ":" + Minutes + ":" + Seconds + "<br/>");
+      document.write("<body bgcolor = 'black' text = 'white'></body>");
+    }
+    
+  </script>  
+
+</center>
+
+<center>
+
+  <hr color = "yellow"/><hr color = "yellow"/>
+
+  <button type = "button" onclick = "welcome()">INTRODUCTION</button>
+
+  <script type="text/javascript">
+   function welcome () {
+    var name = prompt("Enter your name and your last name" , "");
+    document.write("Hello <u>" + name + "</u> welcome to my website . Please reload this website to continue.<body bgcolor = 'black' text = 'white'><br/><img src = 'k.jpg' width = '25%' heigth = '10%' title = 'rock'/>")
+  }
+</script>
+
+<button type = "button" id = "tell-age" onclick = "age()">asking age</button>
+
+<script type="text/javascript">
+  function age() {
+   var age = prompt("Enter your age", "");
+   document.write("You are <u>" + age + "</u> years old.Please reload this website to continue.<body bgcolor = 'black' text = 'white'>");
+ }
+</script>
+
+</center>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<center>
+
+  <button type = "button" id = "shalin" onclick = "rat()">CLICK ME</button>
+
+  <script type="text/javascript">
+    function rat() {
+      alert('HI! EVERYONE I AM SWARNIM');
+    }
+  </script>
+
+</center>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<!--<h1 onMouseOver = "alert('SONGS TIME');"><marquee behavior = "alternate" bgcolor = "brown">Songs - SONGS - Songs - SONGS</marquee></h1>-->
+<!--<h1 onMouseOut = "alert('SONGS TIME');"><marquee behavior = "alternate" bgcolor = "brown">Songs - SONGS - Songs - SONGS</marquee></h1>-->
+
+<h1><marquee behavior = "alternate" bgcolor = "brown">Songs - SONGS - Songs - SONGS</marquee></h1>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<a href = "#real" id = "buttom">BUTTON OF THE PAGE</a>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<div>I <span>HAVE</span> <span class = "h">USED</span> <span class = "t">HTML</span> <span class = "u">AND</span> <span class = "v">CSS</span> <span class = "w">TO</span> <span class = "x">BUILD</span> <span class = "y">THIS</span> <span class = "a">WEB</span> <span class = "b">PAGE
+  .</span></div>
+
+  <hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+  <big>
+
+    <p class = "songs">CLICK ON THE FOLLOWING TO LISTEN THAT SONG OR VIDEO.THERE IS A VIDEO TO LEARN ABOUT HTML AND CSS PROGRAMING TO BUILD A WEBPAGE.THERE ARE NO NEW SONGS BUT THERE ARE OLD AND ROMANTICS SONGS.YOU CAN LISTEN TO THAT SONG BY CLICKING. THERE ARE MORE SONGS, IF ONE SONG IS FINISHED YOU CAN CHOOSE ANOTHER SONG. HOPE YOU WILL ENJOY IT.</p>
+  </big>
+
+  <hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+  USERNAME/NAME:<input type = "text" name = "username"  placeholder = "For eg: swarnim" size = "30px" id = "lion" opacity = "5"/></br>
+  PASSWORD:<input type = "password" name = "password" maxlength = "10" id = "pig" placeholder = "For eg: password"/>
+
+  <button type = "button" id = "ho" onclick = "to()">SHOW PASSWORD</button> 
+
+  <p id = "11">
+
+    <script type="text/javascript">
+     function to() {
+
+      if(lion==null){
+
+        var str = "Enter a password";
+        var print = str.concat(str);
+        document.getElementById("11").innerHTML = print;
+
+      }else{
+
+      var x = document.getElementById("pig").value;
+      document.getElementById("11").innerHTML = x;
+      
+    }    
+    ho.onclick = to;
+
+  </script>
+
+  <hr color = "yellow"/><hr color ="yellow"/>
+
+  DAY:<input id = "knowDay" name = "day" type = "number" placeholder = "For eg: 01" opacity = "5" size = "0px"/>
+  MONTH:<input type = "text" name = "month"  placeholder = "For eg: January" size = "30px" id = "knowMonth" opacity = "5"/></br>
+  YEAR:<input type = "number" name = "year"  placeholder = "For eg: 2015" size = "30px" id = "knowYear" opacity = "5"/></br>
+
+  <hr color = "#ffff00"/>
+
+  <form>
+    <label>MALE:  <input type = "radio" name = "sex" value = "MALE" id = "3"></label>
+    <label>FEMALE:<input type = "radio" name = "sex" value = "FEMALE" id = "4"></label>
+  </form>
+
+  <hr color = "#ffff00"/><hr color = "#ffff00"/>  
+  <ul>
+   <li/><a href = "2.html">HTML LEARNING VIDEO</a>
+   <li/><a href = "3.html">NEELE NEELE AMBAR PAR</a>
+   <li/><a href = "4.html">AAYE HO MERE ZINDAGIME</a>
+   <li/><a href = "5.html">PHOOLON KA TAARON KA</a>
+   <li/><a href = "6.html">EK PYAR KA NAGMA HAI</a>
+ </ul>
+
+<!--body{backgroung-image:url(image name.png/jpg/jpeg...);
+         background-repeat:no repeat; 
+     background-repeat:repeat-x or repeat-yv
+   }-->  
+   
+   <hr color = "#ffff00"/><hr color = "#ffff00"/>
+   <form>
+
+    <pre>
+      WHICH OF THE SONG DID YOU LIKED FROM THE ABOVE SONG. TICK THE FOLLOING?
+      <label>NEELE NEELE AMBAR PAR  <input type = "checkbox" name = "song" value = "NEELE NEELE AMBAR PAR" id = "5"/></label>
+      <label>AAYE HO MERE ZINDAGIME <input type = "checkbox" name = "song" value = "AAYE HO MERE ZINDAGIME" id = "6"/></label>
+      <label>PHOOLON KA TAARON KA   <input type = "checkbox" name = "song" value = "PHOOLON KA TAARON KA" id = "7"/></label>
+      <label>EK PYAR KA NAGMA HAI   <input type = "checkbox" name = "song" value = "EK PYAR KA NAGMA HAI" id = "8"/></label>
+      <label>NOTHING                <input type = "checkbox" name = "song" value = "NOTHING" id = "18"/></label>
+    </pre>
+
+  </form>
+  <!--CHOOSE A FILE TO PUT SOMETHING HERE<br/><input type = "file" name = "spcifile">(to select a file)-->
+  <!--alert('Hello!\n My name is swarnim');-->
+  <hr color = "#ffff00"/><hr color = "#ffff00"/>
+  LEAVE THE COMMENT ABOUT THE WEBPAGE THAT I HAVE CREATED
+  <br>
+
+  <textarea class = "FORD" placeholder = "WRITE SOMETHING HERE" maxlength = "80">
+    WRITE SOMETHING HERE.
+
+  </textarea>
+  <hr color = "#ffff00"><hr color = "#ffff00">
+  <form>
+
+    <pre>  
+      SELECT THE BEST FOOTBALL COUNTRY YOU LIKE.<br/>
+      <label>BRAZIL    <input type = "checkbox" name = "country" id = "12"/></label>
+      <label>ARGENTINA <input type = "checkbox" name = "country" id = "13"/></label>
+      <label>PORTUGAL  <input type = "checkbox" name = "country" id = "14"/></label>
+      <label>GERMANY   <input type = "checkbox" name = "country" id = "15"/></label>
+      <label>USA       <input type = "checkbox" name = "country" id = "16"/></label>  
+      <label>ENGLAND   <input type = "checkbox" name = "country" id = "17"/></label>  
+      <label>NOTHING   <input type = "checkbox" name = "country" id = "18"/></label>
+    </pre>
+
+  </form>
+
+  <hr color = "#ffff00"><hr color = "#ffff00">
+
+  <form>
+    <label for = "number1">Number 1</label>
+    <input id = "number1" type ="number" placeholder ="0">
+    <label for = "number2">Number 2</label>
+    <input id = "number2" type ="number" placeholder ="0">
+    <p><button type="reset">Reset</button>
+    </form>
+
+    <hr color = "#ffff00"><hr color = "#ffff00">
+    <h2>CLICK <span class = "asdf">(BEST CARS)</span> TO KNOW MY BEST CARS.</h2>
+
+    <button type = "button" id = "prashant" onclick = "moon()">BEST CARS</button>
+
+    <script type="text/javascript">
+      function moon() {
+       document.write('<br/>1.<img src = "a.jpg" width = "160px" heigth = "140px" title = "LAMBORGHINI">LAMBORGHINI');
+       document.write('<hr color = "black"><hr color = "black"><br/>2.<img src = "i.jpg" width = "160px" heigth = "140px" title = "BUGATTI">BUGATTI');
+       document.write('<hr color = "black"><hr color = "black"><br/>3.<img src = "b.jpg" width = "160px" heigth = "140px" title = "KOENINGSEEG AGERA R">KOENINGSEEG AGERA R');
+       document.write('<hr color = "black"><hr color = "black"><br/>4.<img src = "c.jpg" width = "160px" heigth = "140px" title = "SSC ULTIMATE AERO">SSC ULTIMATE AERO');
+       document.write('<hr color = "black"><hr color = "black"><br/>5.<img src = "d.jpg" width = "160px" heigth = "140px" title = "9FF GT9-R">9FF GT9-R');
+       document.write('<hr color = "black"><hr color = "black"><br/>6.<img src = "e.jpg" width = "160px" heigth = "140px" title = "SALEEN S7 TWIN-TURBO">SALEEN S7 TWIN-TURBO');
+       document.write('<hr color = "black"><hr color = "black"><br/>7.<img src = "f.jpg" width = "160px" heigth = "140px" title = "KOENIGSEGG">KOENIGSEGG');
+       document.write('<hr color = "black"><hr color = "black"><br/>8.<img src = "g.jpg" width = "160px" heigth = "140px" title = "MCLAREN">MCLAREN F1');
+       document.write('<hr color = "black"><hr color = "black"><br/>9.<img src = "h.jpg" width = "160px" heigth = "140px" title = "ZENVO ST 1">ZENVO ST 1');
+       document.write('<hr color = "black"><hr color = "black"><br/>10.<img src = "j.jpg" width = "160px" heigth = "140px" title = "PAGANI HUAYRA">PAGANI HUAYRA');
+     }
+   </script>
+
+   <hr color = "#ffff00"><hr color = "#ffff00">
+   <h2>CLICK ON <span class = "asdf"> (PICTERS OF EYES) </span> IN ORDER TO SEE THE PICTURES OF EYES OF CHARACTERS OF NARUTO SHIPPUDEN.</h2> 
+
+   <button id = "picture" type = "button" onclick = "ShowPicture()">PICTURES OF EYES</button>
+
+   <script type="text/javascript">
+    function ShowPicture() {
+     document.write('<body bgcolor = "black" text = "white">1.<img src = "naruto.jpg" width = "400px" heigth = "440px" title = "eyes"><br/><hr color = "#ffff00"><hr color = "#ffff00">');
+     document.write('2.<img src = "narutoo.jpg" width = "400px" heigth = "440px" title = "eyes"><br/><hr color = "#ffff00"><hr color = "#ffff00">');
+     document.write('3.<img src = "narutooo.jpg" width = "400px" heigth = "440px" title = "eyes"><br/><hr color = "#ffff00"><hr color = "#ffff00"><hr color = "#ffff00">');
+   }
+
+ </script>
+
+ <hr color = "#ffff00"><hr color = "#ffff00">
+
+ <button type = "button" id = "swarnim" onclick = "swarnim()">COMMENT</button>
+
+ <script type="text/javascript">
+  function swarnim() {
+    prompt('DID YOU LIKE MY WEBSITE (YES/NO)');
+  }
+</script>
+
+<hr color = "#ffff00"><hr color = "#ffff00">
+<h2>NOW CLICK ON THE FOLLOWING COLOR TO KNOW THEIR HEXADECIMAL CODE.</h2>
+SELECT A COLOR:<input type = "color" id = "damna">
+
+<p id = "hi"></p>
+
+<button id = "treasure" onclick = "house()">CLICK ME</button>
+
+<script type="text/javascript">
+ function house() {
+  var x = document.getElementById("damna").value;
+  document.getElementById("hi").innerHTML = x;
+}
+
+</script>
+
+<hr color = "#ffff00"><hr color  = "#ffff00">
+<h2>CLICK <span class = "asdf">(TRY IT)</span> TO CHANGE BACKGROUND COLOR.</h2><br/> 
+
+<button id = "hide" type = "button" onclick = "change()">BLUE</button>
+
+<script type="text/javascript">
+ function change() {
+  document.body.style.backgroundColor = "blue";wwww
+}
+
+hide.onclick = change;
+
+</script>
+
+<button id = "green" type = "button" onclick = "change()">GREEN</button>
+
+<script type="text/javascript">
+ function change() {
+  document.body.style.backgroundColor = "green";
+}
+
+green.onclick = change;
+
+</script>
+
+<button id = "red" type = "button" onclick = "change()">BLACK</button>
+
+<script type="text/javascript">
+ function change() {
+  document.body.style.backgroundColor = "black";
+}
+
+red.onclick = change;
+
+</script>
+
+<button id = "purple" type = "button" onclick = "change()">PURPLE</button>
+
+<script type="text/javascript">
+ function change() {
+  document.body.style.backgroundColor = "#7c00f9";
+}
+
+purple.onclick = change;
+
+</script>
+
+</br>
+<hr color = "#ffff00"><hr color = "#ffff00">
+<h2>CLICK ON <span class="asdf">(Math Formula)</span> TO KNOW THE FORMULA OF MATH.</h2>
+
+<button id = "formula" type = "button" onclick = "formulae()">C.Math Formula</button>
+
+<script type="text/javascript">
+  function formulae() {
+   document.write("1. (a+b)<sup>2</sup> = a<sup>2</sup>+2ab+b<sup>2</sup><br>");
+   document.write("2. (a-b)<sup>2</sup> = a<sup>2</sup>-2ab+b<sup>2</sup><br>");
+   document.write("3. a<sup>2</sup>+b<sup>2</sup> = (a+b)<sup>2</sup>-2ab OR (a-b)<sup>2</sup>+2ab</br>");
+   document.write("4. a<sup>2</sup>-b<sup>2</sup> = (a+b)(a-b)</br>");
+   document.write("5. (a+b)<sup>3</sup> = a<sup>3</sup>+3a<sup>2</sup>b+3ab<sup>2</sup>+b<sup>3</sup></br>");
+   document.write("6. (a-b)<sup>3</sup> = a<sup>3</sup>-3a<sup>2</sup>b+3ab<sup>2</sup>-b<sup>3</sup></br>");
+   document.write("7. a<sup>3</sup>-b<sup>3</sup> = (a-b)<sup>3</sup>+3ab(a-b)</br>");
+   document.write("8. a<sup>3</sup>+b<sup>3</sup> = (a+b)<sup>3</sup>-3ab(a+b)</br><body bgcolor = 'black' text = 'white'>");
+ }
+
+</script>
+
+<hr color = "#ffff00"><hr color = "#ffff00">
+<h2>THIS IS THE CALCULATOR WHICH CAN ADD, SUBTRACT, MULTIPLY, DIVIDE, SQUARE AND GIVE CUBE OF ANY NUMBER YOU LIKE. ( NOTE : ONLY THE <span class = "asdf"> (FIRST NUMBER)
+</span> CAN GIVE SQUARE AND CUBE)</h2>
+
+<pre>
+  FIRST NUMBER:  <input type = "number" id = "apple" value = "1"/>
+  SECOND NUMBER: <input type = "number" id = "ball" value = "1"/>
+  THIRD NUMBER:  <input type = "number" id = "flora" value = "1"/>
+</pre>
+
+<p id = "demo"></p>
+
+<button onclick = "addnumber()" id = "cat">ADD</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p  = document.getElementById("flora").value;
+  var c = +x + +t + +p; 
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+cat.onclick = addnumber;
+
+</script>
+
+<button onclick = "addnumber()" id = "dog">SUBTRACT</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p = document.getElementById("flora").value;
+  var c = (+x - +t) + +p; 
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+dog.onclick = addnumber;
+
+</script>
+
+<button onclick = "addnumber()" id = "fly">MULTIPLY</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p  = document.getElementById("flora").value;
+  var c = x * t * p; 
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+fly.onclick = addnumber;
+
+</script>
+
+<button onclick = "addnumber()" id = "bee">DIVIDE</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p  = document.getElementById("flora").value;
+  var c = x / t / p; 
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+bee.onclick = addnumber;
+
+</script>
+
+<button onclick = "addnumber()" id = "hello">SQUARE</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p  = document.getElementById("flora").value;
+  var c = x * x
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+hello.onclick = addnumber;
+
+</script>
+
+<button onclick = "addnumber()" id = "kaka">CUBE</button>
+
+<script type="text/javascript">
+ function addnumber() {
+  var x = document.getElementById("apple").value;
+  var t = document.getElementById("ball").value;
+  var p = document.getElementById("flora").value;
+  var c = x * x * x 
+  document.getElementById("demo").innerHTML = c;       
+}         
+
+kaka.onclick = addnumber;
+
+</script>
+
+<button type = "button" id = "Sqroot" onclick = "sroot()">SQUARE ROOT</button>
+
+<script type="text/javascript">
+  function sroot() {
+    var x = document.getElementById("apple").value;
+    var y = document.getElementById("ball").value;
+    var z = document.getElementById("flora").value;
+    var c = +x + +y + +z;
+    var d = Math.sqrt(c);
+    document.getElementById("demo").innerHTML = d;
+  }
+
+</script>
+
+<button type = "button" id = "croot" onclick = "croot()">CUBE ROOT</button>
+
+<script type="text/javascript">
+  function croot() {
+    var x = document.getElementById("apple").value;
+    var y = document.getElementById("ball").value;
+    var z = document.getElementById("flora").value;
+    var c = +x + +y + +z;
+    var d = Math.cbrt(c);
+    document.getElementById("demo").innerHTML = d;
+  }
+
+</script>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<h2>CLICK HERE TO KNOW THE DATE <span class = "asdf"> (FOR E.G : APRIL , 2015 IS CONVERTED INTO <br/> 2015-04).</span></h2> 
+
+<input type = "month" id = "lol" value = "2015-04">
+
+<button id = "mahesh" type = "button" onclick = "baba()">CLICK HERE</button>
+
+<p id = "lalmon"></p>
+
+<script type="text/javascript">
+ function baba() {
+  var x = document.getElementById("lol").value;
+  document.getElementById("lalmon").innerHTML = x;
+}
+
+mahesh.onclick = baba;
+
+</script>
+
+<hr color = "#ffff00"><hr color = "#ffff00">
+
+<h2>CLICK SUBMIT TO KNOW SOMETHING ABOUT ME.</h2><br/>
+
+<button id = "mamu" type = "button" onclick = "h()">SUBMIT</button>
+
+<script type="text/javascript">
+ function h() { 
+  document.write('<h1/> <br/> <p class = "watch"> <h3/><body bgcolor = "black" text = "white"> THANKS FOR GIVING YOUR EMAIL AND PASSWORD . IT IS SUBMMITED TO MY ACCOUNT . IF THAT EMAIL AND PASSWORD ARE REAL , DO NOT WORRY I WILL NOT BE HACK BUT IF YOU ARE STILL SCARED I DO NOT KNOW THAT THEY ARE OF FACEBOOK , GAMIL , YOUTUBE , ETC . IF THAT IS FAKE THEN ROCK BECAUSE IF THAT IS REAL OR FAKE IS DOES NOT GO TO MY ACCOUNT . AND DO NOT FORGET TO CERCK MY ADDRESS .')
+}
+
+mamu.onclick = h;           
+
+</script> 
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+<h2>IF YOU WANT TO KNOW MY NAME THEN CLICK <span class = "asdf"> (CLICK ME). </span></h2>
+
+<button type = "button" id = "s6edge" onclick = "s6()">CLICK ME</button>
+
+<script type="text/javascript">
+ function s6() {
+  document.getElementById("s6edge").innerHTML = 'SWARNIM PRAVIDHI CHAULAGAIN';
+}
+</script>
+
+<hr color = "#ffff00"/><hr color = "#ffff00"/>
+<h2>CLICK IN <span class = "asdf"> (CLICK ME) </span> TO KNOW MY FATHER'S AND MOTHER'S NAME.</h2>
+
+<p id = "world">FATHER'S NAME</div>
+  <p id = "no">MOTHER'S NAME</div>
+
+    <button type = "button" id = "songs" onclick = "java()">CLICK ME</button>
+
+    <script type="text/javascript">
+     function java() {
+      document.getElementById('world').innerHTML = 'MAHESH KUMAR CHAULAGAIN';
+      document.getElementById('no').innerHTML = 'LAXMI DULAL';
+    }
+
+  </script>
+
+  <hr color = "#ffff00"/><hr color = "#ffff00"/>
+
+  <h2>CLICK ON <span class = "asdf"> (CLICK ME) </span> TO KNOW MY ADDRESS BUT IT WILL COME AFTER <span class = "asdf"> (TOP OF THE PAGE).
+
+  </span></h2>
+
+  <button id = "abacus" type = "button" onclick = "eat()">CLICK ME</button>
+  
+  <script type="text/javascript">
+   function eat() {
+    var x = document.createElement("ADDRESS");
+    var t = document.createTextNode("KOTESHWOR , KATHMANDU / WARD NUMBER :  35 / NEAR BALKUMARI BRIDGE");
+    x.appendChild(t);
+    document.body.appendChild(x);
+  }       
+
+</script>
+
+<hr color = "#ffff00"><hr color = "#ffff00">
+
+SO,</br></br>
+YOUR USERNAME/NAME IS <p id = "far"></p>YOUR PASSWORD IS<p id = "laptop"></p>
+
+<button type = "button" id = "bhate" onclick = "hack()">USERNAME/NAME</button>
+
+<script type="text/javascript">
+  function hack() {
+    var x = document.getElementById("lion").value;
+    document.getElementById("far").innerHTML = x;
+  }
+
+  bhate.onclick = hack;
+
+</script>
+
+<button type = "button" id = "nose" onclick = "dusman()">PASSWORD</button>
+
+<script type="text/javascript">
+  function dusman() {
+    var x = document.getElementById("pig").value;
+    document.getElementById("laptop").innerHTML = x;
+  }
+
+  nose.onclick = dusman;
+
+</script>
+
+</br>
+<hr color = "#ffff00"><hr color = "#ffff00">
+<h2>THIS IS ONE OF MY BEST SONG WHICH IS<span class="asdf"> (NARUTO SHIPPUDEN OPENING 16) <span/></h2>
+
+<center>
+
+  <embed  width="560" height="315" src="https://www.youtube.com/embed/HUnUXe53Nog" frameborder="0" allowfullscreen></embed>
+
+</center>
+
+<hr color = 'yellow'/><hr color  = "yellow"/>
+
+<h2>THIS IS ONE OF MY SHORT COLLECTION OF SONGS. CLICK ON<span class="asdf"> (MY FAVOURAITE SONGS) </span>TO HEAR IT. IT MAY TAKE A SHORT DURATION OF TIME<span class="asdf"> (ABOUT 5-10 SECOND)</span></h2>
+
+<button tyoe = "button" id= "bestMusic" onclick = "music()">MY FAVOURAITE SONGS</button>
+
+<script type="text/javascript">
+ function music(){
+  document.write('<body bgcolor = "black" text = "white">');
+  document.write('<center><embed  width="560" height="315" src="https://www.youtube.com/embed/HUnUXe53Nog" frameborder="0" allowfullscreen title = "naruto shippuden opening 16"></embed></center><br/><hr color = "yellow"/><hr color = "yellow"/>');
+  document.write('<center><embed width="560" height="315" src="https://www.youtube.com/embed/HcQJzFzZfVI" frameborder="0" allowfullscreen title = "see you again(FAST AND FUROUS 7)"></embed></center><hr color = "yellow"/><hr color = "yellow"/>');
+  document.write('<center><embed width="560" height="315" src="https://www.youtube.com/embed/QoNkfOHBzQk" frameborder="0" allowfullscreen></embed></center><hr color = "yellow"/><hr color = "yellow"/>');
+  document.write('<center><embed width="560" height="315" src="https://www.youtube.com/embed/1BRTHs4YKxg" frameborder="0" allowfullscreen></embed></center>"<center><a href = "#top"><img src = "top.png" title = "goto top"></a></center>"<hr color = "yellow"/><hr color = "yellow"/><hr color = "yellow"/>');
+}
+
+</script>
+
+<hr color = "#ffff00"><hr color = "#ffff00"> 
+<h2>PRESS ANY OF THIS TO LINK TO IT'S WEBSITE<span class="asdf"> (FOR EG: IF YOU PRESS FACEBOOK it WILL LINK YOU TO FACEBOOK)</span></h2> 
+
+<ul>
+  <li><a href="https://www.facebook.com/?_rdr=p">FACEBOOK</a><br/></li>
+  <li><a href="https://www.google.com.np/">GOOGLE</a><br/></li>
+  <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier">GAMIL</a><br/></li>
+  <li><a href="https://www.youtube.com/">YOUTUBE</a><br/></li>
+  <li><a href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com">YAHOO MAIL</a></li>
+  <li><a href="https://chrome.google.com/webstore/category/apps?hl=en">CHROME WEB STORE</a></li>
+  <li><a href="http://www.w3schools.com/tags/default.asp">W3 SCHOOLS</a>
+    <li><a href="https://www.youtube.com/watch?v=eQMP74-XziI">TOP 10 INTELLIGENT ANIMALS</a>
+    </ul>
+
+    <hr color = "#ffff00"><hr color = "#ffff00"> 
+    <h2>IF YOU WATN TO CONTACT OR LEAVE COMMENT THEN :</h2>
+    
+    <a href="mailto:swarnimpc@gmail.com">SWARNIM PRAVIDHI CHAULAGAIN</a>
+    
+    <hr color = "yellow"/><hr color = "yellow"/>
+
+    <center>
+
+      <a href = "#top" id = "real">TOP OF THE PAGE</a>
+
+    </center>
+
+    <a href = "8.html">KNOW THE PERCENTAGE</a>
+
+    <hr color = "#ffff00"><hr color = "#ffff00">
+    <!--<u> ko color css ma change garne.-->
+  </body>
+  </html>
+
+
+
